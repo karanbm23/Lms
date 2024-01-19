@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e81810be47d7711053fdc82f316d4325" label="Leave Request" max_length="40" name="x_1113878_leave_ma_leave_request" type="collection">
+        <element label="Accrued" max_length="40" name="accrued" type="float"/>
+        <element choice="3" default="nyr" label="Approval" max_length="40" name="approval" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="ap"/>
+                <element inactive_on_update="false" label="Not yet Requested" value="nyr"/>
+                <element inactive_on_update="false" label="Rejected" value="rj"/>
+                <element inactive_on_update="false" label="Requested" value="rq"/>
+            </choice>
+        </element>
+        <element label="Attachment" max_length="40" name="attachment" type="file_attachment"/>
+        <element label="Balance" max_length="40" name="balance" type="float"/>
+        <element label="Comments" max_length="40" name="comments" type="string"/>
+        <element label="Duration" max_length="40" name="duration" type="float"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Full Day" max_length="40" name="full_day" type="boolean"/>
+        <element label="Half Day" max_length="40" name="half_day" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Casual Leave" sequence="0" value="cl"/>
+                <element inactive_on_update="false" label="Earned Leave" sequence="1" value="el"/>
+                <element inactive_on_update="false" label="Sick Leave" sequence="2" value="sl"/>
+                <element inactive_on_update="false" label="Others" sequence="3" value="ot"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reason for Others" max_length="40" name="reason_for_others" type="string"/>
+        <element label="Reason for Sick Leave" max_length="40" name="reason_for_sick_leave" type="string"/>
+        <element default="javascript: gs.getUserID();" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="3" default="op" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="ca"/>
+                <element inactive_on_update="false" label="Open" value="op"/>
+                <element inactive_on_update="false" label="Submitted" value="sb"/>
+            </choice>
+        </element>
+        <element label="Taken" max_length="40" name="taken" type="float"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
+    </element>
+</database>

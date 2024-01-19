@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>end_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Leave_Duration</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   var date1 = g_form.getValue('start_date');
+    var date2 = g_form.getValue('end_date');
+    var ga1 = new GlideAjax('Leave_Duration');
+    ga1.addParam('sysparm_name', 'getDurationAjax');
+    ga1.addParam('sysparm_dat1', date1);
+    ga1.addParam('sysparm_dat2', date2);
+    ga1.getXML(durationcalBak);
+
+    function durationcalBak(response) {
+        var res = response.responseXML.documentElement.getAttribute('answer');
+        alert(res);
+        g_form.setValue('duration', res);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 12:08:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f24ad94f4757311053fdc82f316d431b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Leave_Duration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
+        <sys_update_name>sys_script_client_f24ad94f4757311053fdc82f316d431b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 12:55:26</sys_updated_on>
+        <table>x_1113878_leave_ma_leave_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</application>
+        <file_path/>
+        <instance_id>f878f5971bd2355052a243f4bd4bcb83</instance_id>
+        <instance_name>dev209774</instance_name>
+        <name>sys_script_client_f24ad94f4757311053fdc82f316d431b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;end_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Leave_Duration&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   var date1 = g_form.getValue('start_date');
+    var date2 = g_form.getValue('end_date');
+    var ga1 = new GlideAjax('Leave_Duration');
+    ga1.addParam('sysparm_name', 'getDurationAjax');
+    ga1.addParam('sysparm_dat1', date1);
+    ga1.addParam('sysparm_dat2', date2);
+    ga1.getXML(durationcalBak);
+
+    function durationcalBak(response) {
+        var res = response.responseXML.documentElement.getAttribute('answer');
+        alert(res);
+        g_form.setValue('duration', res);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-28 12:08:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f24ad94f4757311053fdc82f316d431b&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Leave_Duration&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Leave Management System" source="x_1113878_leave_ma"&gt;3c97d07e47d7711053fdc82f316d43cc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Leave Management System"&gt;3c97d07e47d7711053fdc82f316d43cc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f24ad94f4757311053fdc82f316d431b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-28 12:55:26&lt;/sys_updated_on&gt;&lt;table&gt;x_1113878_leave_ma_leave_request&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>151480730</payload_hash>
+        <record_name>Leave_Duration</record_name>
+        <reverted_from/>
+        <source>3497d07e47d7711053fdc82f316d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 12:55:26</sys_created_on>
+        <sys_id>bcb7a50b4797311053fdc82f316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cb07e740f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 12:55:26</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f4b7a50b0c9731101cbdda2f4f8acc1e</update_guid>
+        <update_guid_history>f4b7a50b0c9731101cbdda2f4f8acc1e:151480730,f687614bc7973110d298282d37894577:-1517446854,c9b6614b35973110d8a6f1ca456eac72:151480730,c296ed0b3897311016cfc0770d0ee95b:-1344053024,a3662d0b2697311053452824a0624fa5:151480730,f006210b0f973110dd241fb0490c6ba6:1962318970,70cd5d0312973110741378cb2b16b10f:151480730,1b3d994f15573110482b65c438e55b90:-1192500232,fafc11cb1b573110ba8e222ab08f7cfa:-1113196712</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 13:39:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>35297246ea584737aae8250e36385fd1</sys_id>
+        <sys_metadata>f24ad94f4757311053fdc82f316d431b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave_Duration</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
+        <sys_parent display_value="Leave Request">e81810be47d7711053fdc82f316d4325</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
+        <sys_scope_delete display_value="">70257c8ff34c47829a29a256982d4eb1</sys_scope_delete>
+        <sys_update_name>sys_script_client_f24ad94f4757311053fdc82f316d431b</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f24ad94f4757311053fdc82f316d431b">bcb7a50b4797311053fdc82f316d431e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 13:39:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

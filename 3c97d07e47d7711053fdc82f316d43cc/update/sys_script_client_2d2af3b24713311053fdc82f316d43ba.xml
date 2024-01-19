@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>display start date</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   var startdate = new Date();
+	//alert(startdate);
+	var startsndate = new Date().getFullYear()+'-'+("0"+(new Date().getMonth()+1)).slice(-2)+'-'+("0"+new Date().getDate()).slice(-2);
+	g_form.setValue('start_date', startsndate);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 05:00:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d2af3b24713311053fdc82f316d43ba</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>display start date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
+        <sys_update_name>sys_script_client_2d2af3b24713311053fdc82f316d43ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 13:38:07</sys_updated_on>
+        <table>x_1113878_leave_ma_leave_request</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

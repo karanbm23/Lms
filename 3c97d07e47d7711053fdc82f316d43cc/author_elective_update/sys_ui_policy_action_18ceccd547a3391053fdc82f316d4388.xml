@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>end_date</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-04 06:13:24</sys_created_on>
+        <sys_id>18ceccd547a3391053fdc82f316d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>end_date</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
+        <sys_update_name>sys_ui_policy_action_18ceccd547a3391053fdc82f316d4388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 06:13:24</sys_updated_on>
+        <table>x_1113878_leave_ma_leave_request</table>
+        <ui_policy display_value="hide end end">b08ec8d547a3391053fdc82f316d43aa</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</application>
+        <file_path/>
+        <instance_id>f878f5971bd2355052a243f4bd4bcb83</instance_id>
+        <instance_name>dev209774</instance_name>
+        <name>sys_ui_policy_action_18ceccd547a3391053fdc82f316d4388</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>end_date</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-04 06:13:24</sys_created_on><sys_id>18ceccd547a3391053fdc82f316d4388</sys_id><sys_mod_count>0</sys_mod_count><sys_name>end_date</sys_name><sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package><sys_policy/><sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope><sys_update_name>sys_ui_policy_action_18ceccd547a3391053fdc82f316d4388</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-04 06:13:24</sys_updated_on><table>x_1113878_leave_ma_leave_request</table><ui_policy display_value="hide end end">b08ec8d547a3391053fdc82f316d43aa</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>2008933318</payload_hash>
+        <record_name>end_date</record_name>
+        <reverted_from/>
+        <source>3497d07e47d7711053fdc82f316d43ce</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-04 06:13:24</sys_created_on>
+        <sys_id>3bce0cd547a3391053fdc82f316d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd31ae4250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 06:13:24</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>73ce0cd530a33910d26205899168c221</update_guid>
+        <update_guid_history>73ce0cd530a33910d26205899168c221:2008933318</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-04 06:13:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>47fa36bda5574f60bf47d212126c2900</sys_id>
+        <sys_metadata>18ceccd547a3391053fdc82f316d4388</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>end_date</sys_name>
+        <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
+        <sys_parent display_value="">b08ec8d547a3391053fdc82f316d43aa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
+        <sys_scope_delete display_value="">70257c8ff34c47829a29a256982d4eb1</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_18ceccd547a3391053fdc82f316d4388</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_18ceccd547a3391053fdc82f316d4388">3bce0cd547a3391053fdc82f316d4321</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 06:13:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

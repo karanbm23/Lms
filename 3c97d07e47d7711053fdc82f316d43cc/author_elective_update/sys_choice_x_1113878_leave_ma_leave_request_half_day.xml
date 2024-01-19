@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-12-28 10:42:42</sys_created_on>
-            <sys_id>2059494f4717311053fdc82f316d43a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>half_day</sys_name>
             <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>

@@ -17,7 +17,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-12-28 09:01:43</sys_updated_on>
         <table>x_1113878_leave_ma_leave_request</table>
-        <ui_policy display_value="make number read only">428a0c434753311053fdc82f316d4332</ui_policy>
+        <ui_policy display_value="read only and mandatory">428a0c434753311053fdc82f316d4332</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

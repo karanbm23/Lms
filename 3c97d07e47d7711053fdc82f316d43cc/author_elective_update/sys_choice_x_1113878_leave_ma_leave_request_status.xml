@@ -1,100 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="approval" table="x_1113878_leave_ma_leave_request" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_1113878_leave_ma_leave_request" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>approval</element>
+            <element>status</element>
             <name>x_1113878_leave_ma_leave_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-12-27 12:50:38</sys_created_on>
-            <sys_id>e00ddcb2471b711053fdc82f316d4309</sys_id>
+            <sys_created_on>2023-12-27 12:49:11</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>approval</sys_name>
+            <sys_name>status</sys_name>
             <sys_package display_value="Leave Management System" source="x_1113878_leave_ma">3c97d07e47d7711053fdc82f316d43cc</sys_package>
             <sys_policy/>
             <sys_scope display_value="Leave Management System">3c97d07e47d7711053fdc82f316d43cc</sys_scope>
-            <sys_update_name>sys_choice_x_1113878_leave_ma_leave_request_approval</sys_update_name>
+            <sys_update_name>sys_choice_x_1113878_leave_ma_leave_request_status</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-12-27 12:50:38</sys_updated_on>
+            <sys_updated_on>2023-12-27 12:49:11</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>approval</element>
+            <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Approved</label>
+            <label>Cancelled</label>
             <language>en</language>
             <name>x_1113878_leave_ma_leave_request</name>
             <sequence/>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-12-27 12:50:38</sys_created_on>
+            <sys_created_on>2023-12-27 12:49:40</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>01fc18b2471b711053fdc82f316d43bb</sys_id>
+            <sys_id>cfbc98b2471b711053fdc82f316d43ba</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-12-27 12:50:43</sys_updated_on>
-            <value>ap</value>
+            <sys_updated_on>2023-12-27 12:49:49</sys_updated_on>
+            <value>ca</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>approval</element>
+            <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Not yet Requested</label>
+            <label>Open</label>
             <language>en</language>
             <name>x_1113878_leave_ma_leave_request</name>
             <sequence/>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-12-27 12:57:51</sys_created_on>
+            <sys_created_on>2023-12-27 12:49:11</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b40d1cb2471b711053fdc82f316d435c</sys_id>
+            <sys_id>d19c94b2471b711053fdc82f316d43bc</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-12-27 12:58:06</sys_updated_on>
-            <value>nyr</value>
+            <sys_updated_on>2023-12-27 12:49:17</sys_updated_on>
+            <value>op</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>approval</element>
+            <element>status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Rejected</label>
+            <label>Submitted</label>
             <language>en</language>
             <name>x_1113878_leave_ma_leave_request</name>
             <sequence/>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-12-27 12:58:40</sys_created_on>
+            <sys_created_on>2023-12-27 12:49:24</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>aeae9cf2471b711053fdc82f316d4382</sys_id>
+            <sys_id>a3ac18b2471b711053fdc82f316d43ba</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-12-27 12:58:47</sys_updated_on>
-            <value>rj</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>approval</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Requested</label>
-            <language>en</language>
-            <name>x_1113878_leave_ma_leave_request</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-03 16:24:48</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>7201558d47e7f51053fdc82f316d4325</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-03 16:35:42</sys_updated_on>
-            <value>rq</value>
+            <sys_updated_on>2023-12-27 12:49:32</sys_updated_on>
+            <value>sb</value>
         </sys_choice>
     </sys_choice>
 </record_update>
